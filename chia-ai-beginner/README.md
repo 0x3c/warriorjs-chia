@@ -1,18 +1,19 @@
-## chia-ai - beginner - level 1
+## chia-ai - beginner - level 3
 
-### _You see before yourself a long hallway with stairs at the end. There's nothing in the way._
+### _The air feels thicker than before. There must be a horde of sludge._
 
-> **TIP:** Call `warrior.walk()` to walk forward in the Player's `playTurn` method.
+> **TIP:** Be careful not to die! Use `warrior.health()` to keep an eye on your health, and `warrior.rest()` to earn 10% of your max health back.
 
 
 ### Floor Map
 
 ```
-╔════════╗
-║@      >║
-╚════════╝
+╔═════════╗
+║@ s ss s>║
+╚═════════╝
 
 @ = chia-ai (20 HP)
+s = Sludge (12 HP)
 > = stairs
 ```
 
@@ -20,11 +21,15 @@
 
 #### Actions (only one per turn)
 
+* `warrior.rest()`: Gain 10% of max health back, but do nothing more.
 * `warrior.walk()`: Move one space in the given direction (forward by default).
+* `warrior.attack()`: Attack a unit in the given direction (forward by default) dealing 5 HP of damage.
 
 #### Senses
 
+* `warrior.health()`: Return an integer representing your health.
 * `warrior.think()`: Think about your options before choosing an action.
+* `warrior.feel()`: Return the adjacent space in the given direction (forward by default).
 
 ### Next Steps
 
